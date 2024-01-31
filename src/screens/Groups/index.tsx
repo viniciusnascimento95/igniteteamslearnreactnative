@@ -1,5 +1,6 @@
 
-import { Container, Text } from './styles';
+import { Text } from 'react-native';
+import { Container } from './styles';
 
 export function Groups() {
   return (
