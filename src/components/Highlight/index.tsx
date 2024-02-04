@@ -8,18 +8,13 @@ type Props = {
 export function Highlight({ title, subtitle }: Props) {
   return (
     <Container>
-
       <Title>
         {title}
-
       </Title>
 
       <Subtitle>
         {subtitle}
       </Subtitle>
-
     </Container>
-
-
   )
 }
