@@ -4,6 +4,7 @@ import { Header } from '@components/Header';
 import { GroupCard } from '@components/GroupCard';
 import { useState } from 'react';
 import { FlatList } from 'react-native';
+import { ListEmpty } from '@components/ListEmpty';
 
 export function Groups() {
 
@@ -23,6 +24,8 @@ export function Groups() {
           <GroupCard title={item} />
         )
         }
+        contentContainerStyle={groups.length === 0 && { flex: 1 }}
+        ListEmptyComponent={() => <ListEmpty message="Que tal cadastrar a primeira turma ? " />}
 
       />
 
