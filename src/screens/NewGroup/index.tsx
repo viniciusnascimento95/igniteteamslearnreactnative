@@ -11,6 +11,24 @@ export function NewGroups() {
 
   return (
     <Container style={Container}>
+
+    <Header showBackButton />
+
+    <Content>
+      <Icon />
+
+      <Highlight 
+      title='Nova turma'
+      subtitle='crie a turma para adicionar as pessoas'
+      />
+
+      <Button
+        title='Criar '
+        // type='SECONDARY'
+      />
+
+
+    </Content>
      
 
     </Container>
