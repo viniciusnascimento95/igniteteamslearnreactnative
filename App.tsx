@@ -1,8 +1,8 @@
 
 import { ThemeProvider } from 'styled-components';
 
+import { Players } from '@components/Players';
 import { Roboto_400Regular, Roboto_700Bold, useFonts } from '@expo-google-fonts/roboto';
-import { NewGroup } from '@screens/NewGroup';
 import { ActivityIndicator, StatusBar } from 'react-native';
 import theme from './src/theme';
 export default function App() {
@@ -15,7 +15,7 @@ export default function App() {
         translucent
       />
 
-      {fontsLoaded ? <NewGroup /> : <ActivityIndicator />}
+      {fontsLoaded ? <Players /> : <ActivityIndicator />}
 
     </ThemeProvider>
   );
