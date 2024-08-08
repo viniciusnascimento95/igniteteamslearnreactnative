@@ -7,4 +7,13 @@ export const Container = styled.View`
 
     padding: 24px;
 
-`
+`;
+
+export const Form = styled.View`
+
+width: 100%;
+background-color: ${({ theme }) => theme.COLORS.GREEN_700 };
+
+flex-direction: row;
+justify-content: center;
+`;
